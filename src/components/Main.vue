@@ -6,23 +6,26 @@
     </div>
     <div style="zIndex: 1;">
         <h1 id="headerName">{{ main.name }}</h1>
-        <ul>
+        <ul class="list">
             <li>
                 <a class="icon" v-bind:href="'twitter.com/'+ main.social_media.twitter">
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-4x fa-twitter-square"></i>
                 </a>
             </li>
             <li>
-                
-                <a href="">{{ main.social_media.instagram }}</a>
-            </li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li>
-                <a href="">{{ main.social_media.snapchat }}</a>
+                <a class="icon" v-bind:href="'instagram.com/'+ main.social_media.instagram">
+                    <i class="fab fa-4x fa-instagram"></i>
+                </a>
             </li>
             <li>
-                <a href="">{{ main.social_media.email }}</a>
+                <a class="icon" v-bind:href="'snapchat.com/'+ main.social_media.snapchat">
+                    <i class="fab fa-4x fa-snapchat-square"></i>
+                </a>
+            </li>
+            <li>
+                <a class="icon" v-bind:href="'mailto:'+ main.social_media.email">
+                    <i class="far fa-4x fa-envelope"></i>
+                </a>
             </li>
         </ul>
     </div>
@@ -83,5 +86,12 @@
 
     .icon {
         color: white;
+    }
+
+    .list {
+        position: fixed; 
+        right: 10px; 
+        bottom: 10px;
+        list-style: none;
     }
 </style>
