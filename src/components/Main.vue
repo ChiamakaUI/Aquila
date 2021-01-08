@@ -7,22 +7,22 @@
     <div style="zIndex: 1;">
         <h1 id="headerName">{{ main.name }}</h1>
         <ul class="list">
-            <li>
+            <li style="margin: 10px;">
                 <a class="icon" v-bind:href="'twitter.com/'+ main.social_media.twitter">
                     <i class="fab fa-4x fa-twitter-square"></i>
                 </a>
             </li>
-            <li>
+            <li style="margin: 10px;">
                 <a class="icon" v-bind:href="'instagram.com/'+ main.social_media.instagram">
                     <i class="fab fa-4x fa-instagram"></i>
                 </a>
             </li>
-            <li>
+            <li style="margin: 10px;">
                 <a class="icon" v-bind:href="'snapchat.com/'+ main.social_media.snapchat">
                     <i class="fab fa-4x fa-snapchat-square"></i>
                 </a>
             </li>
-            <li>
+            <li style="margin: 10px;">
                 <a class="icon" v-bind:href="'mailto:'+ main.social_media.email">
                     <i class="far fa-4x fa-envelope"></i>
                 </a>
