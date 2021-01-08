@@ -79,7 +79,7 @@
 
     #headerName {
         font-family: 'Dosis';
-        margin-top: 50px;
+        padding-top: 50px;
         color: white;
         letter-spacing: 10px;
     }
